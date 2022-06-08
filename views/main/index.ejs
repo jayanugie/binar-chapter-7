@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Binar Challenge</title>
+
+  <!-- atur lebar awal website sama dengan lebar layar & tidak di-zoom -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- panggil file CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+
+<body>
+  <!-- halaman landing page -->
+  <div id="landing-page">
+
+    <!-- navigasi bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-transparent">
+      <div class="container-fluid mx-5 px-5">
+
+        <!-- logo -->
+        <a class="navbar-brand fw-bold pe-5" href="#">LOGO</a>
+
+        <!-- tombol hanya muncul ketika layar kecil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menu sisi tengah -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link px-3 fw-lighter fs-6" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 fw-lighter fs-6" href="#work">WORK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 fw-lighter fs-6" href="#contact">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 fw-lighter fs-6" href="#about">ABOUT ME</a>
+            </li>
+          </ul>
+
+          <!-- menu sisi kanan -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link px-3 fw-lighter fs-6" aria-current="page" href="#signup">SIGN UP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 fw-lighter fs-6" aria-current="page" href="/login">LOGIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- judul di tengah halaman -->
+    <div class="container fc-white position-absolute top-50 start-50 translate-middle">
+      <div class="d-grid col mx-auto">
+        <p class="text-center fw-bolder fs-1">PLAY TRADITIONAL GAME</p>
+        <p class="text-center fw-lighter fs-4">Experience new traditional game play</p>
+      </div>
+
+      <div class="d-grid col-3 pt-3 mx-auto">
+        <a href="/game" class="btn btn-warning btn-lg fw-light fs-6">TRIAL</a>
+      </div>
+    </div>
+
+    <!-- tombol di bawah halaman -->
+    <div id="story-button" class="container fc-white position-absolute top-100 start-50 translate-middle">
+      <a href="#games" class="text-reset text-decoration-none">
+        <p class="my-auto text-center fw-light fs-6">THE STORY</p>
+        <img class="my-1 mx-auto d-block" src="/svg/scroll-down.svg" alt="click me" />
+      </a>
+    </div>
+  </div>
+
+  <!-- halaman the games -->
+  <div id="games" class="position-relative">
+    <!-- container untuk semua element di halaman ini -->
+    <div class="container px-5 position-absolute top-50 start-50 translate-middle">
+      <!-- baris pertama untuk tulisan what's so special -->
+      <div class="row">
+        <div class="col">
+          <p class="fc-white fw-lighter fs-5">What's so special?</p>
+        </div>
+      </div>
+
+      <!-- baris kedua untuk tulisan the games dan carousel -->
+      <div class="row">
+        <!-- tulisan diberikan kolom lebih sempit -->
+        <div class="col-lg-3">
+          <p class="fc-white fs-1">THE GAMES</p>
+        </div>
+
+        <!-- carousel diberikan kolom lebih lebar -->
+        <div class="col-lg-9">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- indicator bulat di bawah carousel -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
+                class="carousel-indicator-rounded active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="carousel-indicator-rounded"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="carousel-indicator-rounded"
+                aria-label="Slide 3"></button>
+            </div>
+
+            <!-- gambar dalam carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/rockpaperscissor.jpg" class="d-block w-100" alt="First Image">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/rockpaperscissor.jpg" class="d-block w-100" alt="Second Image">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/rockpaperscissor.jpg" class="d-block w-100" alt="Third Image">
+              </div>
+            </div>
+
+            <!-- tombol sebelumnya & selanjutnya -->
+            <button class="carousel-control-prev right" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- halaman features  -->
+  <div id="feature" class="position-relative">
+    <!-- container halaman -->
+    <div class="container px-5 position-absolute">
+
+      <!-- di bagian ini, setiap baris dibagi menjadi 2 kolom -->
+      <!-- tulisan what's so special -->
+      <div class="row">
+        <div class="col-lg-9">
+        </div>
+        <div class="col-lg-3">
+          <p class="fc-white fw-lighter fs-5">What's so special?</p>
+        </div>
+      </div>
+
+      <!-- tulisan features -->
+      <div class="row">
+        <div class="col-lg-9">
+        </div>
+
+        <div class="col-lg-3">
+          <p class="fc-white fs-1">FEATURES</p>
+        </div>
+      </div>
+
+      <!-- bagian selanjutnya di gabung dalam satu kolom-->
+      <div class="row pt-5">
+        <div class="col-lg-9">
+        </div>
+
+        <div class="col-lg-3">
+
+          <!-- baris untuk bagian traditional games -->
+          <div class="row">
+
+            <!-- lingkaran penuh -->
+            <div class="col-1">
+              <div class="bullet"></div>
+            </div>
+
+            <!-- tulisan traditional games -->
+            <div class="col-10">
+              <p class="fc-gold fw-light fs-4">TRADITIONAL GAMES</p>
+            </div>
+          </div>
+
+          <!-- baris untuk bagian if you miss ... -->
+          <div class="row">
+
+            <!-- garis penyambung antar lingkaran, diatur dengan media query -->
+            <div class="col-1">
+              <div class="straight-line"></div>
+            </div>
+
+            <!-- tulisan if you miss ... -->
+            <div class="col-10">
+              <p class="fc-white fw-light fs-6">If you miss your childhood, we provide many traditional games here</p>
+            </div>
+          </div>
+
+          <!-- baris untuk bagian game suit -->
+          <div class="row">
+
+            <!-- lingkaran berlubang -->
+            <div class="col-1">
+              <div class="bullet-outline"></div>
+            </div>
+
+            <!-- tulisan game suit -->
+            <div class="col-10">
+              <p class="fc-gold fw-light fs-4">GAME SUIT</p>
+            </div>
+          </div>
+
+          <!-- baris untuk bagian tdb -->
+          <div class="row">
+
+            <!-- lingkaran berlubang -->
+            <div class="col-1">
+              <div class="bullet-outline"></div>
+            </div>
+
+            <!-- tulisan tdb -->
+            <div class="col-10">
+              <p class="fc-gold fw-light fs-4">TBD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- halaman system requirement  -->
+  <div id="system-req">
+    <div class="container px-5 py-5">
+      <!-- tulisan can my computer run this game -->
+      <p class="fc-white fs-6 fw-lighter text-center">Can My Computer Run This Game?</p>
+
+      <!-- tabel -->
+      <div class="row">
+        <!-- judul tabel -->
+        <p class="fc-white fs-1">SYSTEM</p>
+        <p class="fc-white fs-1">REQUIREMENT</p>
+
+        <!-- tabel dengan background svg, diatur dengan media query -->
+        <!-- ini bisa lebih gampang kalau digantikan dg tabel biasa -->
+        <div class="col-lg-6" id="custom-table">
+          <table>
+            <tr>
+              <td class="table-col table-row-first">
+                <p class="fc-gold">OS:</p>
+                <p class="fc-white">Windows 7 64-bit only (No OSX support at this time)</p>
+              </td>
+
+              <td class="table-col table-row-first">
+                <p class="fc-gold">PROCESSOR:</p>
+                <p class="fc-white">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-col table-row-second">
+                <p class="fc-gold">MEMORY:</p>
+                <p class="fc-white">4 GB RAM</p>
+              </td>
+
+              <td class="table-col table-row-second">
+                <p class="fc-gold">STORAGE:</p>
+                <p class="fc-white">8 GB Available Space</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="table-col-larger table-row-third">
+                <p class="fc-gold">GRAPHICS:</p>
+                <p class="fc-white">NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- halaman top score  -->
+  <div id="top-score" class="position-relative">
+    <!-- container untuk semua element -->
+    <div class="container px-5 position-absolute top-50 start-50 translate-middle">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="fc-white fs-1">TOP SCORES</p>
+          <p class="fc-white fw-lighter fs-5">This top score from various games provided on this platform</p>
+
+          <div class="d-grid col-4 pt-3">
+            <button type="button" class="btn btn-warning btn-lg fw-light fs-6">SEE MORE</button>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card custom-card bg-dark mt-3 ms-5">
+            <div class="card-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="/img/user-1.jpg" class="round-image" alt="Evan Lathi" />
+                  </div>
+
+                  <div class="col-8">
+                    <p class="fc-gold custom-card-title">Evan Lathi</p>
+                    <p class="fc-grey fw-lighter custom-card-title">PC Gamer</p>
+                  </div>
+
+                  <div class="col-1">
+                    <img src="/svg/twitter.svg" class="filter-grey" alt="twitter">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <p class="fc-white fw-light custom-card-content">“One of my gaming highlights of the year.”</p>
+                  <p class="fc-grey fw-lighter custom-card-content">June 18, 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card custom-card bg-dark mt-3 me-5">
+            <div class="card-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="/img/user-2.jpg" class="round-image" alt="Jada Griffin" />
+                  </div>
+
+                  <div class="col-8">
+                    <p class="fc-gold custom-card-title">Jada Griffin</p>
+                    <p class="fc-grey fw-lighter custom-card-title">Nerdreactor</p>
+                  </div>
+
+                  <div class="col-1">
+                    <img src="/svg/twitter.svg" class="filter-grey" alt="twitter">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <p class="fc-white fw-light custom-card-content">“The next big thing in the world of streaming and
+                    survival games.”</p>
+                  <p class="fc-grey fw-lighter custom-card-content">July 10, 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card custom-card bg-dark mt-3 ms-5">
+            <div class="card-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="/img/user-3.jpg" class="round-image" alt="Aaron Williams" />
+                  </div>
+
+                  <div class="col-8">
+                    <p class="fc-gold custom-card-title">Aaron Williams </p>
+                    <p class="fc-grey fw-lighter custom-card-title">Uproxx</p>
+                  </div>
+
+                  <div class="col-1">
+                    <img src="/svg/twitter.svg" class="filter-grey" alt="twitter">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <p class="fc-white fw-light custom-card-content">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                    Ridiculous.”</p>
+                  <p class="fc-grey fw-lighter custom-card-content">December 24, 2018</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- halaman newsletter  -->
+  <div id="newsletter" class="position-relative">
+    <!-- container untuk element gambar & tulisan atas -->
+    <div class="container px-5 pt-5">
+      <!-- baris akan dibagi dua untuk gambar dan tulisan -->
+      <div class="row justify-content-center">
+        <!-- gambar tengkorak, hanya muncul di layar medium ke atas -->
+        <div class="col-lg-5">
+          <img class="img-skull d-none d-lg-block d-xl-block d-xxl-block" src="/img/skull.png" alt="skull" />
+        </div>
+
+        <!-- bagian subscribe newsletter -->
+        <div class="col-lg-5 align-self-center">
+          <p class="fc-white fw-lighter fs-5">Wanna stay in touch?</p>
+          <p class="fc-white fs-1">NEWSLETTER SUBSCRIBE</p>
+          <p class="fc-white fw-lighter fs-5">In order to start receiving our news, all you have to do is enter your
+            email address. Everything else will be taken care of by us. We will send you emails containing information
+            about game. We don’t spam.</p>
+
+          <div class="row">
+            <div class="col">
+              <form class="form-floating">
+                <input type="email" class="form-control input-dark" id="floatingInputValue"
+                  placeholder="youremail@binar.co.id" value="youremail@binar.co.id">
+                <label for="floatingInputValue" class="label-dark">Your email address</label>
+              </form>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-warning btn-lg fw-light fs-6">Subscribe Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container untuk element footer, dipisah agar bisa selalu di bawah -->
+    <div class="container position-absolute top-100 start-50 translate-middle" id="footer">
+      <!-- satu baris untuk link -->
+      <div class="row">
+        <div class="col text-end">
+          <a class="fc-white fw-light text-decoration-none footer-link px-3" href="#landing-page">
+            MAIN
+          </a>
+          <a class="fc-white fw-light text-decoration-none footer-link px-3" href="#games">
+            ABOUT
+          </a>
+          <a class="fc-white fw-light text-decoration-none footer-link px-3" href="#features">
+            GAME FEATURES
+          </a>
+          <a class="fc-white fw-light text-decoration-none footer-link px-3" href="#system-req">
+            SYSTEM REQUIREMENTS
+          </a>
+          <a class="fc-white fw-light text-decoration-none footer-link px-3" href="#top-score">
+            QUOTES
+          </a>
+          <a class="text-decoration-none px-3" id="facebook-logo" href="https://facebook.com">
+            <img src="/svg/facebook.svg" alt="facebook">
+          </a>
+          <a class="text-decoration-none px-3" id="twitter-logo" href="https://twitter.com">
+            <img src="/svg/twitter.svg" alt="twitter">
+          </a>
+          <a class="text-decoration-none px-3" id="youtube-logo" href="https://youtube.com">
+            <img src="/svg/youtube.svg" alt="youtube">
+          </a>
+          <a class="text-decoration-none px-3" id="twitch-logo" href="https://twitch.com">
+            <img src="/svg/twitch.svg" alt="twitch">
+          </a>
+        </div>
+      </div>
+
+      <!-- satu baris untuk garis pemisah -->
+      <div class="row pt-4 pb-3">
+        <div class="col">
+          <div id="line-divider"></div>
+        </div>
+      </div>
+
+      <!-- satu baris untuk copyright & link -->
+      <div class="row">
+        <div class="col">
+          <p class="fc-white fw-lighter">
+            © 2018 Your Games, Inc. All Rights Reserved
+          </p>
+        </div>
+
+        <div class="col text-end">
+          <a class="fc-white fw-light text-decoration-none footer-link" href="#privacy">
+            PRIVACY POLICY
+          </a>
+          <span class="fc-white fw-light">|</span>
+          <a class="fc-white fw-light text-decoration-none footer-link" href="#tos">
+            TERM OF SERVICES
+          </a>
+          <span class="fc-white fw-light">|</span>
+          <a class="fc-white fw-light text-decoration-none footer-link" href="#conduct">
+            CODE OF CONDUCT
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- panggil file Javascript -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // cara mengaktifkan carousel, nama selector harus sesuai dengan id pada element carousel
+    const myCarousel = document.querySelector('#myCarousel'); // #myCarousel adalah selector id yang merujuk pada elemen dengan id myCarousel
+    const carousel = new bootstrap.Carousel(myCarousel); // mengaktifkan selector pada elemen yang telah di-select
+  </script>
+</body>
+
+</html>

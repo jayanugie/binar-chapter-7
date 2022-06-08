@@ -1,0 +1,464 @@
+/* halaman pertama  */
+#landing-page {
+  background-image: url('/bg/background-1.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* halaman kedua */
+#games {
+  background-image: url('/bg/background-2.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* halaman ketiga  */
+#feature {
+  background-image: url('/bg/background-3.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#feature .container {
+  top: 20%
+}
+
+/* halaman keempat  */
+#system-req {
+  background-image: url('/bg/background-4.jpg');
+  /* background-size: cover; */
+  width: 100vw;
+  height: 100vh;
+}
+
+/* halaman kelima  */
+#top-score {
+  background-image: url('/bg/background-5.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* halaman keenam  */
+#newsletter {
+  background-image: url('/bg/background-6.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* background hitam transparant */
+.bg-dark-transparent {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* warna tulisan putih */
+.fc-white {
+  color: white;
+}
+
+/* warna tulisan emas */
+.fc-gold {
+  color: #efa943;
+}
+
+/* warna tulisan abu */
+.fc-grey {
+  color: grey;
+}
+
+/* story button */
+#story-button {
+  margin-top: -5vh
+}
+
+/* untuk membuat indicator carousel menjadi bulat */
+.carousel-indicator-rounded {
+  border: 1px solid white !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+}
+
+.bullet {
+  position: relative;
+  top: 1.5vh;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.bullet-outline {
+  position: relative;
+  top: 1.5vh;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+/* membuat ukuran card */
+.custom-card {
+  width: 400px;
+}
+
+.custom-card-title {
+  margin-bottom: -6px;
+  font-size: medium;
+}
+
+.custom-card-content {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  font-size: smaller;
+}
+
+/* membuat gambar berbentuk lingkaran */
+.round-image {
+  width: 65px;
+  border-radius: 50%;
+  box-shadow: 8px 2px #efa943;
+}
+
+.footer-link:hover {
+  color: #efa943;
+}
+
+/* input gelap */
+.input-dark,
+.input-dark:active,
+.input-dark:focus,
+.input-dark:focus:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #efa943;
+  border: 0;
+  font-size: small;
+  height: 42px !important;
+}
+
+/* label input gelap */
+.label-dark {
+  margin-top: -5px;
+  color: white;
+  font-size: small;
+}
+
+/* geser footer ke atas */
+#footer {
+  margin-top: -10vh;
+}
+
+/* cari nilai filter warna di https://angel-rs.github.io/css-color-filter-generator/ */
+/* filter untuk warna logo twitter di top score */
+.filter-grey {
+  filter: invert(37%) sepia(9%) saturate(67%) hue-rotate(168deg) brightness(95%) contrast(87%);
+}
+
+/* filter untuk icon fb di footer */
+#facebook-logo:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(41%) saturate(5273%) hue-rotate(203deg) brightness(94%) contrast(93%);
+}
+
+/* filter untuk icon twitter di footer */
+#twitter-logo:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(86%) saturate(4244%) hue-rotate(173deg) brightness(96%) contrast(97%);
+}
+
+/* filter untuk icon youtube di footer */
+#youtube-logo:hover {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(61%) saturate(7495%) hue-rotate(359deg) brightness(88%) contrast(120%);
+}
+
+/* filter untuk icon twitch di footer */
+#twitch-logo:hover {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(55%) saturate(2907%) hue-rotate(249deg) brightness(100%) contrast(89%);
+}
+
+/* pembatas garis footer */
+#line-divider {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+/* gambar tengkorak */
+.img-skull {
+  height: 60vh;
+}
+
+
+/*  media query */
+/* perangkat lain (di bawah 576px) */
+@media (max-width: 576px) {
+  .straight-line {
+    position: absolute;
+    bottom: 85px;
+    left: 53px;
+    width: 1px;
+    height: 106px;
+    background-color: white;
+    z-index: 0;
+  }
+
+  /* background table requirement */
+  #custom-table {
+    background-image: url('../svg/disquette.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+
+  .table-col {
+    font-size: smaller;
+    width: 290px;
+    padding-left: 4px;
+  }
+
+  .table-col-larger {
+    font-size: smaller;
+    padding-left: 4px;
+    width: 580px;
+  }
+
+  .table-row-first {
+    padding-top: 8px;
+  }
+
+  .table-row-second {
+    padding-top: 4px;
+  }
+
+  .table-row-third {
+    padding-top: 18px;
+  }
+}
+
+/* perangkat kecil (handphone landscape, 576px ke atas) */
+@media (min-width: 576px) {
+  .straight-line {
+    position: absolute;
+    bottom: 85px;
+    left: 53px;
+    width: 1px;
+    height: 106px;
+    background-color: white;
+    z-index: 0;
+  }
+
+  /* background table requirement */
+  #custom-table {
+    background-image: url('../svg/disquette.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+
+  .table-col {
+    font-size: smaller;
+    width: 290px;
+    padding-left: 4px;
+  }
+
+  .table-col-larger {
+    font-size: smaller;
+    padding-left: 4px;
+    width: 580px;
+  }
+
+  .table-row-first {
+    padding-top: 8px;
+  }
+
+  .table-row-second {
+    padding-top: 10px;
+  }
+
+  .table-row-third {
+    padding-top: 40px;
+  }
+}
+
+/* perangkat sedang (tablet, 768px ke atas) */
+@media (min-width: 768px) {
+  .straight-line {
+    position: absolute;
+    bottom: 90px;
+    left: 53px;
+    width: 1px;
+    height: 80px;
+    background-color: white;
+    z-index: 0;
+  }
+
+  /* background table requirement */
+  #custom-table {
+    background-image: url('../svg/disquette.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+
+  .table-col {
+    font-size: medium;
+    width: 290px;
+    padding-left: 16px;
+  }
+
+  .table-col-larger {
+    font-size: medium;
+    padding-left: 4px;
+    width: 580px;
+  }
+
+  .table-row-first {
+    padding-top: 8px;
+  }
+
+  .table-row-second {
+    padding-top: 36px;
+  }
+
+  .table-row-third {
+    padding-top: 64px;
+  }
+}
+
+/* perangkat besar (desktop, 992px ke atas) */
+@media (min-width: 992px) {
+  .straight-line {
+    position: absolute;
+    bottom: 91px;
+    left: 719px;
+    width: 1px;
+    height: 190px;
+    background-color: white;
+    z-index: 0;
+  }
+
+  /* background table requirement */
+  #custom-table {
+    background-image: url('../svg/disquette.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+
+  .table-col {
+    font-size: small;
+    width: 290px;
+    padding-left: 4px;
+  }
+
+  .table-col-larger {
+    font-size: small;
+    padding-left: 4px;
+    width: 580px;
+  }
+
+  .table-row-first {
+    padding-top: 8px;
+  }
+
+  .table-row-second {
+    padding-top: 10px;
+  }
+
+  .table-row-third {
+    padding-top: 40px;
+  }
+}
+
+/* perangkat ekstra besar (desktop besar, 1200px ke atas) */
+@media (min-width: 1200px) {
+  .straight-line {
+    position: absolute;
+    bottom: 91px;
+    left: 854px;
+    width: 1px;
+    height: 167px;
+    background-color: white;
+    z-index: 0;
+  }
+
+  /* background table requirement */
+  #custom-table {
+    background-image: url('../svg/disquette.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+
+  .table-col {
+    font-size: medium;
+    width: 290px;
+    padding-left: 4px;
+  }
+
+  .table-col-larger {
+    font-size: medium;
+    padding-left: 4px;
+    width: 580px;
+  }
+
+  .table-row-first {
+    padding-top: 8px;
+  }
+
+  .table-row-second {
+    padding-top: 10px;
+  }
+
+  .table-row-third {
+    padding-top: 40px;
+  }
+}
+
+/* perangkat ekstra ekstra besar (desktops yang lebih besar, 1400px ke atas) */
+@media (min-width: 1400px) {
+  .straight-line {
+    position: absolute;
+    bottom: 91px;
+    left: 989px;
+    width: 1px;
+    height: 133px;
+    background-color: white;
+    z-index: 0;
+  }
+
+  /* background table requirement */
+  #custom-table {
+    background-image: url('../svg/disquette.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+
+  .table-col {
+    font-size: medium;
+    width: 290px;
+    padding-left: 6px;
+  }
+
+  .table-col-larger {
+    font-size: medium;
+    padding-left: 6px;
+    width: 580px;
+  }
+
+  .table-row-first {
+    padding-top: 12px;
+  }
+
+  .table-row-second {
+    padding-top: 26px;
+  }
+
+  .table-row-third {
+    padding-top: 60px;
+  }
+
+}

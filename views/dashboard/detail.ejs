@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title>
+    Dashboard | Detail
+  </title>
+</head>
+
+<body>
+  <p>
+    <strong>
+      Detail
+    </strong>
+  </p>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <td>
+          ID
+        </td>
+        <td>
+          Email
+        </td>
+        <td>
+          Name
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <%= user.id %>
+        </td>
+        <td>
+          <%= user.email %>
+        </td>
+        <!-- Sequelize menganggap biodata adalah bentuk jamak, jadinya untuk mengakes user_game_biodata, kita harus pakai user_game_biodatum -->
+        <!-- bentuk singular = datum, bentuk plural = data -->
+        <!-- ribet banget esquelize, kesel gak sih? :) -->
+        <td>
+          <%= user.user_game_biodatum.name %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <a href="/dashboard/index">Kembali</a>
+</body>
+
+</html>

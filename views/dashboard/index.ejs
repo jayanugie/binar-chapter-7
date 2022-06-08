@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <title>
+    Dashboard | Index
+  </title>
+</head>
+
+<body>
+  <p>
+    <strong>
+      User List
+    </strong>
+  </p>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <td>
+          ID
+        </td>
+        <td>
+          Email
+        </td>
+        <td>
+          Detail
+        </td>
+        <td>
+          Update
+        </td>
+        <td>
+          Delete
+        </td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% users.forEach((item)=> { %>
+        <tr>
+          <td>
+            <%= item.id %>
+          </td>
+          <td>
+            <%= item.email %>
+          </td>
+          <td>
+            <!-- Alihkan ke halaman detail -->
+            <a href="/dashboard/detail/<%= item.id %>">Lihat Detail</a>
+          </td>
+          <td>
+            <!-- Alihkan ke halaman detail -->
+            <a href="/dashboard/update/<%= item.id %>">Update</a>
+          </td>
+          <td>
+            <!-- Kalo yang ini langsung akses API nya, karena tidak perlu tampilan halaman -->
+            <a href="/users/delete/<%= item.id %>">Delete</a>
+          </td>
+        </tr>
+        <% }); %>
+    </tbody>
+  </table>
+  <br>
+  <a href="/dashboard/create">Tambah User</a>
+</body>
+
+</html>

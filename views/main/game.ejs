@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Play Game</title>
+
+  <!-- CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/game.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Bagian Navbar -->
+  <div class="container-fluid mt-3">
+
+    <!-- Baris navbar -->
+    <div class="row align-items-center">
+
+      <!-- Kolom pertama untuk tombol kembali -->
+      <div class="col-1 fs-1 fw-bolder text-end custom-back-button">
+        <a href="/" class="text-reset text-decoration-none">
+          <!-- gunakan "&lt;" bukan "<" karena "<" adalah karakter untuk membuat element -->
+          &lt;
+        </a>
+      </div>
+
+      <!-- Kolom kedua untuk logo -->
+      <div class="col-1 text-center">
+        <img src="/img/logo.png" class="custom-logo" alt="logo" />
+      </div>
+
+      <!-- Kolom ketiga untuk judul game -->
+      <div class="col fs-2 fw-bold custom-game-title">
+        ROCK PAPER SCISSOR
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bagian Game -->
+  <div class="container text-center custom-game-section">
+
+    <!-- Baris ke 1 player/comp -->
+    <div class="row my-3 justify-content-center align-items-center">
+
+      <div class="col-2 fs-4 fw-bold custom-game-player-name">
+        PLAYER 1
+      </div>
+
+      <div class="col-2">
+      </div>
+
+      <div class="col-2 fs-4 fw-bold custom-game-player-name">
+        COM
+      </div>
+
+    </div>
+
+    <!-- Baris ke 2 pilihan batu -->
+    <div class="row my-5 justify-content-center align-items-center">
+
+      <div class="col-2 custom-choice-background align-items-center" id="player-rock">
+        <img class="custom-choice" src="/img/batu.png" alt="player-rock"/>
+      </div>
+
+      <div class="col-2">
+      </div>
+
+      <div class="col-2 custom-choice-background" id="com-rock">
+        <img class="custom-choice" src="/img/batu.png" alt="com-rock"/>
+      </div>
+
+    </div>
+
+    <!-- Baris ke 3 pilhan kertas -->
+    <div class="row my-5 justify-content-center align-items-center">
+
+      <div class="col-2 custom-choice-background" id="player-paper">
+        <img class="custom-choice" src="/img/kertas.png" alt="player-paper"/>
+      </div>
+
+      <div class="col-2 mx-2 fw-bold custom-vs-background custom-vs-text" id="vs">
+        VS
+      </div>
+
+      <div class="col-2 custom-choice-background" id="com-paper">
+        <img class="custom-choice" src="/img/kertas.png" alt="com-paper"/>
+      </div>
+
+    </div>
+
+    <!-- Baris ke 4 pilihan gunting -->
+    <div class="row my-5 justify-content-center align-items-center">
+
+      <div class="col-2 custom-choice-background" id="player-scissor">
+        <img class="custom-choice" src="/img/gunting.png" alt="player-scissor"/>
+      </div>
+
+      <div class="col-2">
+      </div>
+
+      <div class="col-2 custom-choice-background" id="com-scissor">
+        <img class="custom-choice" src="/img/gunting.png" alt="com-scissor"/>
+      </div>
+
+    </div>
+
+    <!-- Baris ke 4 tombol reset -->
+    <div class="row my-5 justify-content-center align-items-center">
+
+      <div class="col-2">
+      </div>
+
+      <div class="col-2" id="reset">
+        <img class="custom-choice" src="/img/refresh.png" alt="refresh"/>
+      </div>
+
+      <div class="col-2">
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="/js/game.js"></script>
+</body>
+
+</html>

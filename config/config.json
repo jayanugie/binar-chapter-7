@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "",
+    "database": "kelompok_4_db",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "binar",
+    "password": "keren",
+    "database": "referensi_challenge_test",
+    "host": "sql.madecanggih.dev",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "binar",
+    "password": "keren",
+    "database": "referensi_challenge_production",
+    "host": "sql.madecanggih.dev",
+    "dialect": "postgres"
+  }
+}

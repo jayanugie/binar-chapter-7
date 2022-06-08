@@ -1,0 +1,21 @@
+<form action="/users/update/<%= user.id %>" method="post">
+  <label for="email">Email</label>
+  <br>
+  <input type="text" name="email" value="<%= user.email %>">
+  <br>
+
+  <label for="password">Password</label>
+  <br>
+  <input type="password" name="password" value="<%= user.password %>">
+  <br>
+
+  <label for="name">Name</label>
+  <br>
+  <!-- Sequelize menganggap biodata adalah bentuk jamak, jadinya untuk mengakes user_game_biodata, kita harus pakai user_game_biodatum -->
+  <!-- bentuk singular = datum, bentuk plural = data -->
+  <!-- ribet banget esquelize, kesel gak sih? :) -->
+  <input type="text" name="name" value="<%= user.user_game_biodatum.name %>">
+  <br>
+
+  <button type="submit">Simpan</button>
+</form>
