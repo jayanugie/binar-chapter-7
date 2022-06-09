@@ -8,19 +8,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id_user: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: {
-            tableName: 'user_games',
-            schema: 'public'
-          },
-          key: 'id'
-        },
-        allowNull: false
-      },
-      score: {
+      roomId: {
         type: Sequelize.INTEGER
+      },
+      player1: {
+        type: Sequelize.STRING
+      },
+      player2: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
