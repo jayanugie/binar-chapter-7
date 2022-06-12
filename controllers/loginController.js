@@ -49,7 +49,7 @@ exports.login = async (req,res) => {
         );
 
         res.status(200).json({
-            user_id: user.uuid,
+            user_uuid: user.uuid,
             message: `You are logged in as ${user.name}`,
             role: user.role,
             token: token
