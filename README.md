@@ -61,5 +61,5 @@ npm run devStart
 * `/register` dengan metode POST, pengguna harus mengisi "name", "email", "role", "password" pada Body.
 * `/login` dengan metode POST, pengguna harus mengisi "email", dan "password" pada Body dan akan mendapatkan token.
 * `/room/create` dengan metode POST, pengguna harus mengisi "roomName" dan harus memasukkan salah satu token user.
-* `/room/play` dengan metode POST, pengguna harus mengisi "room-name" dan "playerChoice" (tiga pilihan array) serta mengisi token sesuai player yang akan main.
+* `/room/play` dengan metode POST, pengguna harus mengisi "room_name" dan "playerChoice" (tiga pilihan array) serta mengisi token sesuai player yang akan bermain. Response pemenang akan muncul jika player kedua telah mengisi pilihan.
 * `/histories` dengan metode GET, pengguna akan melihat history setiap player yang bermain, untuk melihatnya pengguna harus mengisi token.
